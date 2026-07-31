@@ -50,29 +50,32 @@
 .about-info {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   margin-bottom: 24px;
 }
 
 .about-info-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .about-info-icon {
-  font-size: 16px;
+  font-size: 14px;
   color: #1890ff;
-  width: 20px;
+  flex-shrink: 0;
 }
 
 .about-info-label {
+  font-size: 15px;
   font-weight: 600;
   color: #1a1a2e;
-  min-width: 100px;
+  flex-shrink: 0;
 }
 
 .about-info-value {
+  font-size: 14px;
   color: #555;
 }
 
@@ -95,9 +98,5 @@
   .about-profile-image {
     width: 200px;
     height: 200px;
-  }
-
-  .about-info-item {
-    flex-wrap: wrap;
   }
 }

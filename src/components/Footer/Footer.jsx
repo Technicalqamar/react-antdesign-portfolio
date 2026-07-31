@@ -11,13 +11,13 @@ import {
 } from 'react-icons/fa';
 import './Footer.css';
 
-const githubUrl = 'https://github.com/your-username';
-const linkedinUrl = 'https://linkedin.com/in/your-profile';
+const githubUrl = 'https://github.com/Technicalqamar';
+const linkedinUrl = 'https://www.linkedin.com/in/qamar-zaman-b7aab6377/';
 const facebookUrl = 'https://facebook.com/your-profile';
 const instagramUrl = 'https://instagram.com/your-profile';
-const emailAddress = 'your@email.com';
-const phoneNumber = '+92 300 1234567';
-const locationText = 'Lahore, Pakistan';
+const emailAddress = 'qamarzaman445556@gmail.com';
+const phoneNumber = '0342-8171029';
+const locationText = 'Karachi, Pakistan';
 
 const quickLinks = [
   { label: 'Home', href: '#home' },

@@ -12,9 +12,9 @@ import {
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaUpload } from 'react-icons/fa';
 import './Contact.css';
 
-const emailAddress = 'your@email.com';
-const phoneNumber = '+92 300 1234567';
-const locationText = 'Lahore, Pakistan';
+const emailAddress = 'qamarzaman445556@gmail.com';
+const phoneNumber = '0342-8171029';
+const locationText = 'Karachi, Pakistan';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -29,7 +29,7 @@ const Contact = () => {
     message.success('Message sent successfully.');
 
     notification.success({
-      message: 'Success',
+      title: 'Success',
       description:
         'Your message has been sent successfully. I will get back to you soon.',
     });

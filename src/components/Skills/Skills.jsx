@@ -60,7 +60,7 @@ const Skills = () => {
                 <Progress
                   percent={skill.percent}
                   strokeColor="#1890ff"
-                  trailColor="#e8e8e8"
+                  railColor="#e8e8e8"
                   showInfo={false}
                   className="skill-progress"
                 />

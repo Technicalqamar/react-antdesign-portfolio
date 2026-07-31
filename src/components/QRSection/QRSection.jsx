@@ -2,10 +2,9 @@ import { Card, QRCode, Button, message } from 'antd';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import './QRSection.css';
 
-const portfolioUrl = 'https://yourportfolio.com';
-const githubUrl = 'https://github.com/your-username';
-const linkedinUrl = 'https://linkedin.com/in/your-profile';
-const emailAddress = 'your@email.com';
+const githubUrl = 'https://github.com/Technicalqamar';
+const linkedinUrl = 'https://www.linkedin.com/in/qamar-zaman-b7aab6377/';
+const emailAddress = 'qamarzaman445556@gmail.com';
 
 const socialLinks = [
   {
@@ -29,8 +28,18 @@ const socialLinks = [
 ];
 
 const QRSection = () => {
-  const handleCopyLink = () => {
-    message.success('Portfolio link copied!');
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(githubUrl);
+    } catch {
+      const textarea = document.createElement('textarea');
+      textarea.value = githubUrl;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+    }
+    message.success('GitHub link copied successfully.');
   };
 
   return (
@@ -38,7 +47,7 @@ const QRSection = () => {
       <div className="qr-container">
         <h2 className="qr-heading">Connect With Me</h2>
         <p className="qr-intro">
-          Scan the QR code to view my portfolio or use the links below to
+          Scan the QR code to view my GitHub profile or use the links below to
           connect with me directly.
         </p>
 
@@ -46,10 +55,10 @@ const QRSection = () => {
           {/* Left side: QR Code */}
           <div className="qr-left">
             <Card className="qr-code-card">
-              <QRCode value={portfolioUrl} size={180} />
-              <p className="qr-code-label">Scan to visit my portfolio</p>
+              <QRCode value={githubUrl} size={180} />
+              <p className="qr-code-label">Scan to visit my GitHub</p>
               <Button type="primary" onClick={handleCopyLink}>
-                Copy Portfolio Link
+                Copy GitHub Link
               </Button>
             </Card>
           </div>

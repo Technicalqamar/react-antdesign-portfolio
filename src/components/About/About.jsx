@@ -1,9 +1,10 @@
 import { Card, Button } from 'antd';
-import { FaUser, FaMapMarkerAlt, FaEnvelope, FaGraduationCap, FaCode } from 'react-icons/fa';
+import { FaUser, FaMapMarkerAlt, FaEnvelope, FaPhone, FaGraduationCap } from 'react-icons/fa';
 import profileImage from '../../assets/images/profile.jpg';
 import './About.css';
 
-const emailAddress = 'your@email.com';
+const emailAddress = 'qamarzaman445556@gmail.com';
+const phoneNumber = '0342-8171029';
 
 const About = () => {
   return (
@@ -35,27 +36,27 @@ const About = () => {
             <div className="about-info">
               <div className="about-info-item">
                 <FaUser className="about-info-icon" />
-                <span className="about-info-label">Name:</span>
+                <span className="about-info-label">Name :</span>
                 <span className="about-info-value">Qamar Zaman</span>
               </div>
               <div className="about-info-item">
-                <FaMapMarkerAlt className="about-info-icon" />
-                <span className="about-info-label">Location:</span>
-                <span className="about-info-value">Karachi, Pakistan</span>
-              </div>
-              <div className="about-info-item">
                 <FaEnvelope className="about-info-icon" />
-                <span className="about-info-label">Email:</span>
+                <span className="about-info-label">Email :</span>
                 <span className="about-info-value">{emailAddress}</span>
               </div>
               <div className="about-info-item">
-                <FaGraduationCap className="about-info-icon" />
-                <span className="about-info-label">Education:</span>
-                <span className="about-info-value">fsc Computer Science</span>
+                <FaPhone className="about-info-icon" />
+                <span className="about-info-label">Phone :</span>
+                <span className="about-info-value">{phoneNumber}</span>
               </div>
               <div className="about-info-item">
-                <FaCode className="about-info-icon" />
-                <span className="about-info-label">Experience:</span>
+                <FaMapMarkerAlt className="about-info-icon" />
+                <span className="about-info-label">Location :</span>
+                <span className="about-info-value">Karachi, Pakistan</span>
+              </div>
+              <div className="about-info-item">
+                <FaGraduationCap className="about-info-icon" />
+                <span className="about-info-label">Education :</span>
                 <span className="about-info-value">Frontend React Developer</span>
               </div>
             </div>

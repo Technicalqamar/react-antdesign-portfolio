@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Card, Button, Tag, Modal } from 'antd';
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub, FaEye } from 'react-icons/fa';
 import schoolImage from '../../assets/images/school-management.png';
 import hospitalImage from '../../assets/images/hospital-management.png';
 import portfolioProjectImage from '../../assets/images/portfolio-project.png';
@@ -15,7 +15,7 @@ const projectList = [
     status: 'Completed',
     image: schoolImage,
     liveDemoUrl: 'https://your-live-demo.com/school-management',
-    githubUrl: 'https://github.com/your-username/school-management',
+    githubUrl: 'https://github.com/Technicalqamar/school-management',
   },
   {
     title: 'Hospital Management System',
@@ -25,7 +25,7 @@ const projectList = [
     status: 'In Progress',
     image: hospitalImage,
     liveDemoUrl: 'https://your-live-demo.com/hospital-management',
-    githubUrl: 'https://github.com/your-username/hospital-management',
+    githubUrl: 'https://github.com/Technicalqamar/hospital-management',
   },
   {
     title: 'Portfolio Website',
@@ -35,7 +35,7 @@ const projectList = [
     status: 'Completed',
     image: portfolioProjectImage,
     liveDemoUrl: 'https://your-live-demo.com/portfolio',
-    githubUrl: 'https://github.com/your-username/portfolio',
+    githubUrl: 'https://github.com/Technicalqamar/portfolio',
   },
 ];
 
@@ -64,12 +64,6 @@ const Projects = () => {
               <h3 className="project-title">{project.title}</h3>
               <p className="project-description">{project.description}</p>
 
-              <div className="project-tags">
-                {project.tech.map((tech) => (
-                  <Tag key={tech} color="blue">{tech}</Tag>
-                ))}
-              </div>
-
               <div className="project-actions">
                 <Button
                   type="primary"
@@ -88,15 +82,14 @@ const Projects = () => {
                 >
                   GitHub
                 </Button>
+                <Button
+                  icon={<FaEye />}
+                  size="small"
+                  onClick={() => setSelectedProject(project)}
+                >
+                  View Details
+                </Button>
               </div>
-
-              <Button
-                type="link"
-                className="project-details-btn"
-                onClick={() => setSelectedProject(project)}
-              >
-                View Details
-              </Button>
             </Card>
           ))}
         </div>
@@ -108,7 +101,8 @@ const Projects = () => {
         open={selectedProject !== null}
         onCancel={() => setSelectedProject(null)}
         footer={null}
-        width={600}
+        width={520}
+        centered
       >
         {selectedProject && (
           <div className="modal-content">

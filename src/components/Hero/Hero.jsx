@@ -3,9 +3,9 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import profileImage from '../../assets/images/profile.jpg';
 import './Hero.css';
 
-const githubUrl = 'https://github.com/your-username';
-const linkedinUrl = 'https://linkedin.com/in/your-profile';
-const emailAddress = 'your@email.com';
+const githubUrl = 'https://github.com/Technicalqamar';
+const linkedinUrl = 'https://www.linkedin.com/in/qamar-zaman-b7aab6377/';
+const emailAddress = 'qamarzaman445556@gmail.com';
 
 const Hero = () => {
   return (
