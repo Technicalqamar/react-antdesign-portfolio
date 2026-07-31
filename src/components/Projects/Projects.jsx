@@ -15,7 +15,7 @@ const projectList = [
     status: 'Completed',
     image: schoolImage,
     liveDemoUrl: 'https://your-live-demo.com/school-management',
-    githubUrl: 'https://github.com/Technicalqamar/school-management',
+    githubUrl: 'https://github.com/Technicalqamar',
   },
   {
     title: 'Hospital Management System',
@@ -25,7 +25,7 @@ const projectList = [
     status: 'In Progress',
     image: hospitalImage,
     liveDemoUrl: 'https://your-live-demo.com/hospital-management',
-    githubUrl: 'https://github.com/Technicalqamar/hospital-management',
+    githubUrl: 'https://github.com/Technicalqamar',
   },
   {
     title: 'Portfolio Website',
@@ -34,8 +34,8 @@ const projectList = [
     detailedDescription: 'This portfolio website was built using React and Ant Design to create a clean, professional, and responsive personal brand presence. It features sections for skills, projects, testimonials, and contact information. The design focuses on simplicity, readability, and a great user experience across all devices.',
     status: 'Completed',
     image: portfolioProjectImage,
-    liveDemoUrl: 'https://your-live-demo.com/portfolio',
-    githubUrl: 'https://github.com/Technicalqamar/portfolio',
+    liveDemoUrl: 'https://react-antdesign-portfolio.vercel.app/',
+    githubUrl: 'https://github.com/Technicalqamar/react-antdesign-portfolio',
   },
 ];
 
