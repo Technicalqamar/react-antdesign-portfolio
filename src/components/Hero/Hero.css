@@ -1,0 +1,137 @@
+.hero {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  background: #f8f9fa;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* Profile image */
+.hero-image {
+  flex-shrink: 0;
+}
+
+.hero-image-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image-card .ant-card-body {
+  padding: 0;
+}
+
+.hero-profile-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Text content */
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-name {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 8px 0;
+}
+
+.hero-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #1890ff;
+  margin: 0 0 16px 0;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin: 0 0 24px 0;
+}
+
+/* Action buttons */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* Social media links */
+.hero-social {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e8e8e8;
+  transition: background 0.3s;
+}
+
+.hero-social-link:hover {
+  background: #1890ff;
+}
+
+.hero-social-icon {
+  font-size: 20px;
+  color: #333;
+}
+
+.hero-social-link:hover .hero-social-icon {
+  color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 24px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-profile-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-name {
+    font-size: 32px;
+  }
+
+  .hero-title {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-social {
+    justify-content: center;
+  }
+}
