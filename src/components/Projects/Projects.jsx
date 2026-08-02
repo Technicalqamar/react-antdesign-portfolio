@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Card, Button, Tag, Modal } from 'antd';
 import { FaExternalLinkAlt, FaGithub, FaEye } from 'react-icons/fa';
 import schoolImage from '../../assets/images/school-management.png';
-import hospitalImage from '../../assets/images/hospital-management.png';
+import maintainIQImage from '../../assets/images/fixed-asset-management-1.jpg';
 import portfolioProjectImage from '../../assets/images/portfolio-project.png';
 import './Projects.css';
 
@@ -18,13 +18,13 @@ const projectList = [
     githubUrl: 'https://github.com/Technicalqamar',
   },
   {
-    title: 'Hospital Management System',
+    title: 'MaintainIQ Asset Management System',
     tech: ['React', 'JavaScript'],
-    description: 'A hospital management system designed to streamline patient records, appointments, and staff coordination.',
-    detailedDescription: 'This hospital management system simplifies daily operations by providing tools for patient registration, appointment scheduling, doctor assignments, billing, and prescription management. Built with React and vanilla JavaScript, it offers a clean and intuitive interface for healthcare professionals.',
+    description: 'An asset management platform for tracking, maintaining, and managing company equipment and inventory.',
+    detailedDescription: 'MaintainIQ is a comprehensive asset management system built with React and JavaScript. It helps organizations track physical assets, schedule maintenance, manage inventory, and generate reports. The application provides role-based access control, real-time status updates, and an intuitive dashboard for monitoring asset health.',
     status: 'In Progress',
-    image: hospitalImage,
-    liveDemoUrl: 'https://your-live-demo.com/hospital-management',
+    image: maintainIQImage,
+    liveDemoUrl: 'https://your-live-demo.com/maintainiq-asset-management',
     githubUrl: 'https://github.com/Technicalqamar',
   },
   {

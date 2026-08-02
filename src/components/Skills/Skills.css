@@ -1,6 +1,18 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .skills {
   padding: 80px 24px;
   background: #f8f9fa;
+  animation: fadeUp 0.6s ease-out;
 }
 
 .skills-container {

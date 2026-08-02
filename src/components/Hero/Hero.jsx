@@ -1,4 +1,4 @@
-import { Button, Card } from 'antd';
+import { Button } from 'antd';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import profileImage from '../../assets/images/profile.jpg';
 import './Hero.css';
@@ -13,13 +13,11 @@ const Hero = () => {
       <div className="hero-container">
         {/* Profile image */}
         <div className="hero-image">
-          <Card className="hero-image-card">
-            <img
-              src={profileImage}
-              alt="Qamar Zaman"
-              className="hero-profile-image"
-            />
-          </Card>
+          <img
+            src={profileImage}
+            alt="Qamar Zaman"
+            className="hero-profile-image"
+          />
         </div>
 
         {/* Text content */}

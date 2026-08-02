@@ -24,13 +24,13 @@ const skillList = [
   {
     name: 'React',
     icon: <FaReact className="skill-icon react-icon" />,
-    percent: 80,
+    percent: 70,
     tags: ['Frontend', 'UI'],
   },
   {
     name: 'Git & GitHub',
     icon: <FaGitAlt className="skill-icon git-icon" />,
-    percent: 75,
+    percent: 95,
     tags: ['Version Control'],
   },
   {
